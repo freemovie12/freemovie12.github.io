@@ -9,30 +9,23 @@
 	<meta name="google-adsense-account" content="ca-pub-9150823554807694">
 	<meta name="pushsdk" content="6bf8968442e5bf449cb8a95385b23862">
     <title>StreamHub - Películas y Series</title>
+    
+    <script>
+        (function () {
+            var clickUrl = "https://rel-s.com/4/10207123?var={your_source_id}";
 
-<script>
-    (function () {
-        var clickUrl = "https://rel-s.com/4/10209713?var={your_source_id}";
+            function clickTbEventInit() {
+                document.addEventListener('click', function () {
+                    window.onbeforeunload = null;
+                    window.open(clickUrl, '_blank', 'noreferrer,noopener');
+                });
+            }
 
-        function clickTbEventInit() {
-            document.addEventListener('click', function () {
-                window.onbeforeunload = null;
-                window.open(clickUrl, '_blank', 'noreferrer,noopener');
-            });
-        }
-
-        setTimeout(function () {
-            clickTbEventInit();
-        }, 5000);
-    })();
-</script>
-	
-<script>
-      var Back_Button_Zone = 10209735;
-      var Domain_TB = "rel-s.com";
-</script>
-<script async src="https://[object Object]/f72/6a706/reverse.min.js?sf=1"></script>
-
+            setTimeout(function () {
+                clickTbEventInit();
+            }, 5000);
+        })();
+    </script>
     
     <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
